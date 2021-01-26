@@ -115,7 +115,7 @@ Compararison of popular currency exchange rates.
 
 ```
 function inProcess() {
-	
+	//
 }
 ```
 
