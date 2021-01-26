@@ -66,17 +66,14 @@ Compararison of popular currency exchange rates.
 
 #### MVP 
 
-- Display of the currency 
 - Conversion of the currency value pair from X currency to Y currency
-- Enable convertion list
-- Input number(amount desire to conver)
-
+- Enable list conversion
+- Allow input amount to conver
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
--
--
+- Result of comparison of rates
+- Append images for a better UX display 
 
 ## Project Schedule
 
@@ -84,9 +81,9 @@ Compararison of popular currency exchange rates.
 |  Day | Deliverable | Status
 |---|---| ---|
 |Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|Jan 26| Project Approval | Incomplete
+|Jan 26| Project Approval & pseudocode| Incomplete
 |Jan 27| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Jan 28| Initial Clickable Model  | Incomplete
+|Jan 28| CSS Flexbox-styling-Media Queries  | Incomplete
 |Jan 29| MVP | Incomplete
 |Feb 1| Presentations/Project Submission | Incomplete
 
@@ -99,18 +96,21 @@ Compararison of popular currency exchange rates.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| HTML | M | 2hrs| -hrs | -hrs |
-| CSS | M | 6hrs| -hrs | -hrs |
-| Event listener | H | 4.5hrs| -hrs | -hrs |
-| API to display currency list| H | 4hrs| -hrs | -hrs |
-| Conversion exchange rate | H | 8.5hrs| -hrs | -hrs |
-| Advanced CSS | L | 5hrs| -hrs | -hrs |
-| Total | H | 30hrs| -hrs | -hrs |
+| Structure of HTML | M | 3hrs| 0 | 0 |
+| CSS styling| M | 3hrs| 0 | 0 |
+| Positioning containers with felbox | M | 3hrs| 0 | 0|
+| Event Listener for the currency list  H |3hrs| 0| 0 |
+| API to display currency list| H | 3hrs| 0 | 0 |
+| Media Queries for responsive design| H |3hrs| 0 | 0 |
+| Functionality of the conversion rate| H | 3hrs| 0 | 0 |
+| Function of the convertion button | H | 3hrs| 0 | 0 |
+| Input x amount to convert  | H | 3hrs| 0 | 0 |
+| Functionality of Conversion display result | H | 3hrs| 0 | 0 |
+| UX image display | L | 3hrs| 0 | 0 |
+| Advanced CSS | L | 3hrs| 0 | 0 |
+| Total | H | 36hrs| 0 | 0 |
 
 ## Code Snippet
-
-
-
 ```
 function inProcess() {
 	//
