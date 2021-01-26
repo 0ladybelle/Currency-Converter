@@ -66,8 +66,6 @@ Compararison of popular currency exchange rates.
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP 
 
 - Display of the currency 
@@ -83,9 +81,6 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -102,23 +97,20 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Timeframes
 
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | HTML | M | 1hrs| -hrs | -hrs |
 | CSS | M | 5hrs| -hrs | -hrs |
 | Query Selector | H | 4hrs| -hrs | -hrs |
-| API to display conversion| H | 3.5hrs| -hrs | -hrs |
-| Exchange rate function| H | 7.5hrs| -hrs | -hrs |
+| API to display conversion| H | 4hrs| -hrs | -hrs |
+| Exchange rate function| H | 8hrs| -hrs | -hrs |
 | Advanced CSS | L | 3hrs| -hrs | -hrs |
-| Total | H | 24hrs| 5hrs | 5hrs |
+| Total | H | 25hrs| 5hrs | 5hrs |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+
 
 ```
 function reverse(string) {
