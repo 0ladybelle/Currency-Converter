@@ -101,12 +101,12 @@ Compararison of popular currency exchange rates.
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | HTML | M | 1hrs| -hrs | -hrs |
-| CSS | M | 5hrs| -hrs | -hrs |
+| CSS | M | 6hrs| -hrs | -hrs |
 | Query Selector | H | 4hrs| -hrs | -hrs |
 | API to display conversion| H | 4hrs| -hrs | -hrs |
-| Exchange rate function| H | 8hrs| -hrs | -hrs |
-| Advanced CSS | L | 3hrs| -hrs | -hrs |
-| Total | H | 25hrs| 5hrs | 5hrs |
+| Exchange rate function| H | 9hrs| -hrs | -hrs |
+| Advanced CSS | L | 4hrs| -hrs | -hrs |
+| Total | H | 28hrs| 5hrs | 5hrs |
 
 ## Code Snippet
 
