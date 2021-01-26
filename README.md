@@ -98,11 +98,11 @@ Compararison of popular currency exchange rates.
 | --- | :---: |  :---: | :---: | :---: |
 | Structure of HTML | M | 3hrs| 0 | 0 |
 | CSS styling| M | 3hrs| 0 | 0 |
-| Positioning containers with felbox | M | 3hrs| 0 | 0|
-| Event Listener for the currency list  H |3hrs| 0| 0 |
+| Positioning containers with flexbox | M | 3hrs| 0 | 0|
+| Event Listener for the currency list | H |3hrs| 0| 0 |
 | API to display currency list| H | 3hrs| 0 | 0 |
-| Media Queries for responsive design| H |3hrs| 0 | 0 |
-| Functionality of the conversion rate| H | 3hrs| 0 | 0 |
+| Media Queries for responsive design | H |3hrs| 0 | 0 |
+| Functionality of the conversion rate | H | 3hrs| 0 | 0 |
 | Function of the convertion button | H | 3hrs| 0 | 0 |
 | Input x amount to convert  | H | 3hrs| 0 | 0 |
 | Functionality of Conversion display result | H | 3hrs| 0 | 0 |
