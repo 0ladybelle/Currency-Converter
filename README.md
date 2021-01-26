@@ -107,7 +107,7 @@ Compararison of popular currency exchange rates.
 | API to display currency list| H | 4hrs| -hrs | -hrs |
 | Conversion exchange rate | H | 8.5hrs| -hrs | -hrs |
 | Advanced CSS | L | 5hrs| -hrs | -hrs |
-| Total | H | 30hrs| 5hrs | 5hrs |
+| Total | H | 30hrs| -hrs | -hrs |
 
 ## Code Snippet
 
