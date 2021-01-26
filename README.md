@@ -103,9 +103,9 @@ Compararison of popular currency exchange rates.
 | --- | :---: |  :---: | :---: | :---: |
 | HTML | M | 2hrs| -hrs | -hrs |
 | CSS | M | 6hrs| -hrs | -hrs |
-| Query Selector | H | 4.5hrs| -hrs | -hrs |
-| API to display conversion| H | 4hrs| -hrs | -hrs |
-| Exchange rate function| H | 8.5hrs| -hrs | -hrs |
+| Event listener | H | 4.5hrs| -hrs | -hrs |
+| API to display currency list| H | 4hrs| -hrs | -hrs |
+| Conversion exchange rate | H | 8.5hrs| -hrs | -hrs |
 | Advanced CSS | L | 5hrs| -hrs | -hrs |
 | Total | H | 30hrs| 5hrs | 5hrs |
 
