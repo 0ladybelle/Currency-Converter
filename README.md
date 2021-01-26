@@ -2,15 +2,13 @@
 
 ## Currency Converter
 
-(URL)[""]
-
 ## Project Description
 
 Compararison of popular currency exchange rates.
 
 ## API and Data Sample
 
-(Link to API) [https://api.currencyfreaks.com/latest?apikey=0c3fd0a2f4fc40228137729dce5814a9&base=]
+[Currency-Freaks API](https://api.currencyfreaks.com/latest?apikey=0c3fd0a2f4fc40228137729dce5814a9&base=)
 ```JSON
 {
     "date": "2021-01-26 00:06:00+00",
@@ -62,7 +60,7 @@ Compararison of popular currency exchange rates.
 
 ## Wireframes
 
-(Link to wireframes)[https://wireframe.cc/pro/pp/71e592d64409956]
+[Link to wireframes](https://wireframe.cc/pro/pp/71e592d64409956)
 
 ### MVP/PostMVP
 
@@ -94,7 +92,7 @@ Compararison of popular currency exchange rates.
 
 ## Priority Matrix
 
-(Link to Matrix)[https://wireframe.cc/pro/pp/71e592d64409956]
+[Link to Matrix](https://wireframe.cc/pro/pp/71e592d64409956)
 
 ## Timeframes
 
