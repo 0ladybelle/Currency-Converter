@@ -70,7 +70,8 @@ Compararison of popular currency exchange rates.
 
 - Display of the currency 
 - Conversion of the currency value pair from X currency to Y currency
-- Beta version for international money transfer
+- Enable convertion list
+- Input number(amount desire to conver)
 
 
 #### PostMVP  
@@ -100,21 +101,21 @@ Compararison of popular currency exchange rates.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| HTML | M | 1hrs| -hrs | -hrs |
+| HTML | M | 2hrs| -hrs | -hrs |
 | CSS | M | 6hrs| -hrs | -hrs |
-| Query Selector | H | 4hrs| -hrs | -hrs |
+| Query Selector | H | 4.5hrs| -hrs | -hrs |
 | API to display conversion| H | 4hrs| -hrs | -hrs |
-| Exchange rate function| H | 9hrs| -hrs | -hrs |
-| Advanced CSS | L | 4hrs| -hrs | -hrs |
-| Total | H | 28hrs| 5hrs | 5hrs |
+| Exchange rate function| H | 8.5hrs| -hrs | -hrs |
+| Advanced CSS | L | 5hrs| -hrs | -hrs |
+| Total | H | 30hrs| 5hrs | 5hrs |
 
 ## Code Snippet
 
 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+function inProcess() {
+	
 }
 ```
 
