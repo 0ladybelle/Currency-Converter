@@ -94,7 +94,7 @@ Compararison of popular currency exchange rates.
 
 ## Priority Matrix
 
-(Link to wireframes)[https://wireframe.cc/pro/pp/71e592d64409956]
+(Link to Matrix)[https://wireframe.cc/pro/pp/71e592d64409956]
 
 ## Timeframes
 
