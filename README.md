@@ -2,7 +2,7 @@
 
 ## Currency Converter
 
-(Deployed URL)[""]
+(URL)[""]
 
 ## Project Description
 
