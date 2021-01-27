@@ -13,37 +13,41 @@
 <body>
   <header>
     <h1>Currency Converter</h1>
-    <!-- posible gif it's not a priority 
-    <video src="https://i.pinimg.com/originals/d7/49/06/d74906d39a1964e7d07555e7601b06ad.gif"></video>
-    <div class="video-header"></div>
-  -->
 
   </header>
   <!-- IN PROCESS -->
 
-  <input id="input-amount" placeholder="Insert Amount"></input>
-  <div class="selection">
+  <main>
+    <div class="selection">
+      <div class=currency>
+        <input type="number" id="input-base" placeholder="US Dollar" />
 
-    <select name="currencies" id="currencies">
-      <option value="USA">US Dollar</option>
-      <option value="EUR">Euro</option>
-      <option value="AUS">Australian Dollar</option>
-      <option value="DOP">Dominican Peso</option>
-    </select>
+        <select name="currencies" id="currency">
+          <option value="USD">US Dollar</option>
+          <option value="EUR">Euro</option>
+          <option value="AUD">Australian Dollar</option>
+          <option value="DOP">Dominican Peso</option>
+        </select>
 
-    <select name="currencies" id="currencies">
-      <option value="USA">US Dollar</option>
-      <option value="EUR">Euro</option>
-      <option value="AUS">Australian Dollar</option>
-      <option value="DOP">Dominican Peso</option>
-    </select>
-  </div>
+        <button id="conversion">Convert</button>
+        <!-- <div class="rates" id="rates"></div> -->
 
-  <button id="conversion-button">Convert</button>
-  <div id="result">Result</div>
+        <input type="number" class="output" placeholder="Result">
+      </div>
+    </div>
+    </div>
 
-
+  </main>
 
 </body>
 
 </html>
+
+<!-- <div class=currency>
+      <select name="currencies" id="to">
+        <option value="USA">US Dollar</option>
+        <option value="EUR">Euro</option>
+        <option value="AUS">Australian Dollar</option>
+        <option value="DOP">Dominican Peso</option>
+      </select>
+    </div> -->-
