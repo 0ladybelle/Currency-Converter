@@ -41,7 +41,7 @@ main {
   flex-direction: row-reverse;
 }
 
- select{
+ select {
   width: 140px;
   height: 35px;
   font-size: 15px;

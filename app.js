@@ -6,7 +6,7 @@ const BASE_URL = `${DOMAIN}latest?apikey=${API_KEY}`
 
 async function getCurrencyConversion() {
   try {
-    let response = await axios.get(`${BASE_URL}&base=$`)
+    let response = await axios.get(`${BASE_URL}&base=`)
     return response.data
   } catch (error) {
     console.log(error)
