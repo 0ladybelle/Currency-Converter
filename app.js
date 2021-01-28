@@ -22,7 +22,7 @@ const conversionButton = document.querySelector('#conversion')
 conversionButton.addEventListener('click', async (e) => {
   let multiplier = document.querySelector('#input-base').value
   console.log(multiplier)
-  multiplier = parseInt(multiplier)
+  multiplier = parseFloat(multiplier).toFixed(2)
   const inputValue = document.querySelector('#currency').value
 
   converted.length = 0
@@ -45,7 +45,7 @@ function displayCurrencyList(list) {
     //get the current element
     const displayString = list[i]
     //create div for every element
-    const displayDiv = document.createElement('option')
+    const displayDiv = document.createElement('div')
     //interpolate element value into insnerHTML of the div that just was created
     displayDiv.innerHTML = `
     ${displayString}

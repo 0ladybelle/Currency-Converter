@@ -8,52 +8,67 @@ Compararison of popular currency exchange rates.
 
 ## API and Data Sample
 
-[Currency-Freaks API](https://api.currencyfreaks.com/latest?apikey=0c3fd0a2f4fc40228137729dce5814a9&base=)
+[Fixer API](http://data.fixer.io/api/latest?access_key=b314fa295febc2e41e4933aff444d1c6)
 ```JSON
 {
-    "date": "2021-01-26 00:06:00+00",
-    "base": "USD",
+    "success": true,
+    "timestamp": 1611842827,
+    "base": "EUR",
+    "date": "2021-01-28",
     "rates": {
-        "FJD": "2.0396",
-        "MXN": "20.1058",
-        "STD": "20466.377105",
-        "LVL": "0.656261",
-        "SCR": "21.20219",
-        "CDF": "1978.099377",
-        "BBD": "2.0",
-        "GTQ": "7.78084",
-        "CLP": "733.0",
-        "HNL": "24.236475",
-        "UGX": "3687.350984",
-        "ZAR": "15.2297",
-        "TND": "2.7025",
-        "CUC": "1.0",
-        "BSD": "1.0",
-        "SLL": "10188.687634",
-        "SDG": "55.3198",
-        "IQD": "1460.486156",
-        "CUP": "26.5",
-        "GMD": "51.5",
-        "TWD": "27.92",
-        "RSD": "97.4",
-        "DOP": "58.075259",
-        "KMF": "405.374901",
-        "BCH": "0.002304280200472377",
-        "MYR": "4.0455",
-        "FKP": "0.731152",
-        "XOF": "540.246185",
-        "GEL": "3.315",
-        "BTC": "0.0000309810457961819",
-        "UYU": "42.173496",
-        "MAD": "8.949604",
-        "CVE": "91.4",
-        "TOP": "2.290264",
-        "AZN": "1.700805",
-        "OMR": "0.384956",
-        "PGK": "3.54593",
-        "KES": "110.10707",
-        "SEK": "8.28558",
-        "BTN": "72.80902",
+        "AED": 4.456255,
+        "AFN": 94.955964,
+        "ALL": 124.080383,
+        "AMD": 628.657747,
+        "ANG": 2.177712,
+        "AOA": 795.491229,
+        "ARS": 105.81056,
+        "AUD": 1.587722,
+        "AWG": 2.18385,
+        "AZN": 2.052469,
+        "BAM": 1.960735,
+        "BBD": 2.449587,
+        "BDT": 102.875443,
+        "BGN": 1.959108,
+        "BHD": 0.457007,
+        "BIF": 2356.576045,
+        "BMD": 1.21325,
+        "BND": 1.616517,
+        "BOB": 8.401578,
+        "BRL": 6.547612,
+        "BSD": 1.213215,
+        "BTC": 3.8021868e-5,
+        "BTN": 88.630545,
+        "BWP": 13.383758,
+        "BYN": 3.180857,
+        "BYR": 23779.698083,
+        "BZD": 2.445477,
+        "CAD": 1.556661,
+        "CDF": 2401.021637,
+        "CHF": 1.078082,
+        "CLF": 0.032568,
+        "CLP": 898.659857,
+        "CNY": 7.840138,
+        "COP": 4354.523754,
+        "CRC": 743.497577,
+        "CUC": 1.21325,
+        "CUP": 32.151122,
+        "CVE": 110.541516,
+        "CZK": 26.076355,
+        "DJF": 215.986723,
+        "DKK": 7.437588,
+        "DOP": 70.318741,
+        "DZD": 161.17986,
+        "EGP": 19.064402,
+        "ERN": 18.198626,
+        "ETB": 47.89562,
+        "EUR": 1,
+        "FJD": 2.482669,
+        "FKP": 0.886138,
+        "GBP": 0.886273,
+        "GEL": 4.009769,
+        "GGP": 0.886138,
+        "GHS": 7.061063,
     }
 }
 ```
@@ -67,8 +82,8 @@ Compararison of popular currency exchange rates.
 #### MVP 
 
 - Conversion of the currency value pair from X currency to Y currency
-- Enable list conversion
 - Allow input amount to conver
+- Enable base conversion
 
 #### PostMVP  
 
@@ -80,8 +95,8 @@ Compararison of popular currency exchange rates.
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|Jan 26| Project Approval & pseudocode| Incomplete
+|Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|Jan 26| Project Approval & pseudocode| Complete
 |Jan 27| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |Jan 28| CSS Flexbox-styling-Media Queries  | Incomplete
 |Jan 29| MVP | Incomplete
@@ -99,7 +114,7 @@ Compararison of popular currency exchange rates.
 | Structure of HTML | M | 3hrs| 0 | 0 |
 | CSS styling| M | 3hrs| 0 | 0 |
 | Positioning containers with flexbox | M | 3hrs| 0 | 0|
-| Event Listener for the currency list | H |3hrs| 0| 0 |
+| Event Listener for the currency base list | H |3hrs| 0| 0 |
 | API to display currency list| H | 3hrs| 0 | 0 |
 | Media Queries for responsive design | H |3hrs| 0 | 0 |
 | Functionality of the conversion rate | H | 3hrs| 0 | 0 |
@@ -112,8 +127,10 @@ Compararison of popular currency exchange rates.
 
 ## Code Snippet
 ```
-function inProcess() {
-	//
+converted.length = 0
+  const data = await getCurrencyConversion(inputValue)
+  const { rates } = data
+  console.log(rates)
 }
 ```
 
