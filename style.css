@@ -72,8 +72,9 @@ section {
 .result {
   text-align: center;
   width: 200px;
-  height: 35px;;
+  height: 50px;;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border: 5px solid #7EA16B;
+  
 }
 

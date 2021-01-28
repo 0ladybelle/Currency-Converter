@@ -45,13 +45,12 @@ function displayCurrencyList(list) {
     //get the current element
     const displayString = list[i]
     //create div for every element
-    const displayDiv = document.createElement('div')
+    const displayDiv = document.createElement('option')
     //interpolate element value into insnerHTML of the div that just was created
-
     displayDiv.innerHTML = `
     ${displayString}
     `
-    list.sort[]
+    // list.sort[]
     displayDiv.classList.add("list")
     //append the div to the result section
     resultSection.append(displayDiv)
