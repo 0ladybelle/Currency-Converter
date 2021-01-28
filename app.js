@@ -1,12 +1,14 @@
-const DOMAIN = "https://api.currencyfreaks.com/"
-const API_KEY = "0c3fd0a2f4fc40228137729dce5814a9"
-const BASE_URL = `${DOMAIN}latest?apikey=${API_KEY}`
+const DOMAIN = "http://data.fixer.io/api/"
+const API_KEY = "b314fa295febc2e41e4933aff444d1c6"
+const BASE_URL = `${DOMAIN}latest?access_key=${API_KEY}`
+
+// http://data.fixer.io/api/latest?access_key=b314fa295febc2e41e4933aff444d1c6
 
 //  API 
 
-async function getCurrencyConversion() {
+async function getCurrencyConversion(searchTerm) {
   try {
-    let response = await axios.get(`${BASE_URL}&base=`)
+    let response = await axios.get(`${BASE_URL}&base=${searchTerm}`)
     return response.data
   } catch (error) {
     console.log(error)
@@ -15,33 +17,44 @@ async function getCurrencyConversion() {
 
 // ${searchTerm}&symbols=${symbols}
 
+const converted = []
 const conversionButton = document.querySelector('#conversion')
 conversionButton.addEventListener('click', async (e) => {
-  const inputValue = document.querySelector('#input-base').value
-  console.log(inputValue)
+  let multiplier = document.querySelector('#input-base').value
+  console.log(multiplier)
+  multiplier = parseInt(multiplier)
+  const inputValue = document.querySelector('#currency').value
+
+  converted.length = 0
   const data = await getCurrencyConversion(inputValue)
-  currencyList(data)
-  console.log(data)
+  const { rates } = data
+  console.log(rates)
+  for (const key in rates) {
+    const value = rates[key]
+    const displayConvertedCurrency = `${key} ${multiplier * value}`
+    // console.log(`${key}: ${value}`);
+    converted.push(displayConvertedCurrency)
+  }
+  console.log(converted)
+  displayCurrencyList(converted)
 })
 
-function currencyConversion(currenciesData) {
-  const select = document.createElement('select')
-  select.innerHTML = `
-  <option rates=${currenciesData.rates}></option>
-  `
-  let selection = document.querySelector('#currency')
-  selection.append(select)
-
-}
-
-function currencyList(list) {
+function displayCurrencyList(list) {
+  let resultSection = document.querySelector('.result')
   for (let i = 0; i < list.length; i++) {
-    currencyConversion(list[i])
+    //get the current element
+    const displayString = list[i]
+    //create div for every element
+    const displayDiv = document.createElement('div')
+    //interpolate element value into insnerHTML of the div that just was created
+
+    displayDiv.innerHTML = `
+    ${displayString}
+    `
+    list.sort[]
+    displayDiv.classList.add("list")
+    //append the div to the result section
+    resultSection.append(displayDiv)
   }
 }
 
-// output = output[input-base] * Number(currency)
-    // let output = `converter amount ${input-base} is ${output} ${currency}`
-    // document.getElementById('conversion').innerText = output
-
-// https://api.currencyfreaks.com/latest?apikey=0c3fd0a2f4fc40228137729dce5814a9&base=
