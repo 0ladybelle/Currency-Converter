@@ -18,26 +18,27 @@
   <!-- IN PROCESS -->
 
   <main>
-    <div class="selection">
-      <div class=currency1>
-        <input type="number" id="input-base" placeholder="Insert Amount" />
+    <form id="form">
+      <div class="selection">
+        <div class=currencies>
+          <input type="number" id="input-base" placeholder="Insert Amount" name="input-base" />
 
-        <select name="currencies" id="currency">
-          <option value="EUR">Euro</option>
-        </select>
+          <select name="currency" id="currency">
+            <option value="EUR">Euro</option>
+          </select>
 
-        <button id="conversion">Convert</button>
+          <button id="conversion" name="conversion">Convert</button>
+          <input type="button" id="reload" value="Reload" onclick="reloadForm()">
+        </div>
+
+        <!-- <select class="result">Exchange</select> -->
 
       </div>
 
-      <!-- <select class="result">Exchange</select> -->
-
-    </div>
   </main>
 
-  <div class="result"></div>
-
-
+  <div class="result" name="result"></div>
+  </form>
 
 </body>
 

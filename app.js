@@ -2,9 +2,7 @@ const DOMAIN = "http://data.fixer.io/api/"
 const API_KEY = "b314fa295febc2e41e4933aff444d1c6"
 const BASE_URL = `${DOMAIN}latest?access_key=${API_KEY}`
 
-// http://data.fixer.io/api/latest?access_key=b314fa295febc2e41e4933aff444d1c6
-
-//  API 
+//  API working 100%
 
 async function getCurrencyConversion(searchTerm) {
   try {
@@ -15,28 +13,34 @@ async function getCurrencyConversion(searchTerm) {
   }
 }
 
-// ${searchTerm}&symbols=${symbols}
-
 const converted = []
-const conversionButton = document.querySelector('#conversion')
-conversionButton.addEventListener('click', async (e) => {
+
+let conversionButton = document.querySelector('#conversion')
+conversionButton.addEventListener('click', async (event) => {
+  //event listener to converted button
+  event.preventDefault()
   let multiplier = document.querySelector('#input-base').value
   console.log(multiplier)
-  multiplier = parseFloat(multiplier).toFixed(2)
+  multiplier = parseInt(multiplier)
   const inputValue = document.querySelector('#currency').value
 
   converted.length = 0
+
   const data = await getCurrencyConversion(inputValue)
+  //object distructuting
   const { rates } = data
   console.log(rates)
+  //loop through object 
   for (const key in rates) {
     const value = rates[key]
     const displayConvertedCurrency = `${key} ${multiplier * value}`
     // console.log(`${key}: ${value}`);
     converted.push(displayConvertedCurrency)
   }
+
   console.log(converted)
   displayCurrencyList(converted)
+
 })
 
 function displayCurrencyList(list) {
@@ -50,10 +54,16 @@ function displayCurrencyList(list) {
     displayDiv.innerHTML = `
     ${displayString}
     `
-    // list.sort[]
     displayDiv.classList.add("list")
     //append the div to the result section
     resultSection.append(displayDiv)
+
   }
 }
 
+function reloadForm() {
+  window.location.reload()
+}
+
+
+// http://data.fixer.io/api/latest?access_key=b314fa295febc2e41e4933aff444d1c6
