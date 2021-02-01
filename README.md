@@ -87,8 +87,8 @@ Compararison of popular currency exchange rates.
 
 #### PostMVP  
 
-- Result of comparison of rates
-- Append images for a better UX display 
+- Result of comparison list/table of rates
+- Append image for a better UX display 
 
 ## Project Schedule
 
@@ -97,10 +97,10 @@ Compararison of popular currency exchange rates.
 |---|---| ---|
 |Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Jan 26| Project Approval & pseudocode| Complete
-|Jan 27| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Jan 28| CSS Flexbox-styling-Media Queries  | Incomplete
-|Jan 29| MVP | Incomplete
-|Feb 1| Presentations/Project Submission | Incomplete
+|Jan 27| Core Application Structure (HTML, CSS, etc.) | Complete
+|Jan 28| CSS Flexbox-styling-Media Queries  | Complete
+|Jan 29| MVP | Complete
+|Feb 1| Presentations/Project Submission | Complete
 
 ## Priority Matrix
 
@@ -111,28 +111,25 @@ Compararison of popular currency exchange rates.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Structure of HTML | M | 3hrs| 0 | 0 |
-| CSS styling| M | 3hrs| 0 | 0 |
-| Positioning containers with flexbox | M | 3hrs| 0 | 0|
-| Event Listener for the currency base list | H |3hrs| 0| 0 |
-| API to display currency list| H | 3hrs| 0 | 0 |
-| Media Queries for responsive design | H |3hrs| 0 | 0 |
-| Functionality of the conversion rate | H | 3hrs| 0 | 0 |
-| Function of the convertion button | H | 3hrs| 0 | 0 |
-| Input x amount to convert  | H | 3hrs| 0 | 0 |
-| Functionality of Conversion display result | H | 3hrs| 0 | 0 |
-| UX image display | L | 3hrs| 0 | 0 |
-| Advanced CSS | L | 3hrs| 0 | 0 |
-| Total | H | 36hrs| 0 | 0 |
+| Structure of HTML | M | 3hrs| 2hrs | 2hrs |
+| CSS styling| M | 3hrs| 2hrs | 2hrs |
+| Positioning containers with flexbox | M | 3hrs| 3hrs | 3hrs |
+| Event Listener for the currency base | H |3hrs| 2hrs | 2hrs |
+| API to display currency list| H | 3hrs| 3hrs | 3hrs |
+| Media Queries for responsive design | H |3hrs| 5hrs | 5hrs |
+| Functionality of the conversion rate | H | 3hrs| 4hrs | 4hrs |
+| Function of the convertion button | H | 3hrs| 2hrs | 2hrs |
+| Input x amount to convert  | H | 3hrs| 2hrs| 2hrs| |
+| Functionality of Conversion display result | H | 3hrs| 4hrs | 4hrs |
+| UX image display | L | 3hrs| 2hrs | 2hrs |
+| Advanced CSS | L | 3hrs| 2hrs | 2hrs |
+| Total | H | 36hrs| 36hrs | 36hrs |
 
 ## Code Snippet
 ```
-converted.length = 0
-  const data = await getCurrencyConversion(inputValue)
-  const { rates } = data
-  console.log(rates)
-}
+const value = rates[key]
+const displayConvertedCurrency = `${key} ${multiplier * value}`
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+I had to change the API because the conversion base/currency rates I did not had permission with the USD base. (I had to change the base currency). Also, I had to change part of the layout I designed. I wanted to add more interaction/experience showing a table/list of currency instead of just a list of selection.

@@ -5,38 +5,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!--Appended link of CSS and JS in HTML -->
   <script defer src="app.js" charset="UTF-8"></script>
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="no title">
+
   <title>Currency Converter</title>
 </head>
 
 <body>
   <header>
     <h1>Currency Converter</h1>
-
   </header>
-  <!-- IN PROCESS -->
-
+  <!-- main project HTML -->
   <main>
+    <!-- Created to restart de functionality of of the conversion in JS-->
     <form id="form">
+      <!-- Selection div just to be use in CSS -->
       <div class="selection">
+        <!-- Division/frame of the currency funcionality -->
         <div class=currencies>
+          <!-- Whole number amount to be inserted -->
           <input type="number" id="input-base" placeholder="Insert Amount" name="input-base" />
-
+          <!-- Selection list of the base currency -->
           <select name="currency" id="currency">
+            <!--Base currency-->
             <option value="EUR">Euro</option>
           </select>
-
+          <!-- Conversion Button -->
           <button id="conversion" name="conversion">Convert</button>
+          <!-- Reload form -->
           <input type="button" id="reload" value="Reload" onclick="reloadForm()">
         </div>
-
-        <!-- <select class="result">Exchange</select> -->
-
       </div>
-
   </main>
-
+  <!-- Division to display the list/table of currencies already being converted -->
   <div class="result" name="result"></div>
   </form>
 
