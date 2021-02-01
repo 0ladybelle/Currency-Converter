@@ -1,6 +1,7 @@
 # Project Overview
 
 ## Currency Converter
+[Project link](https://anabeligle.github.io/Currency-Converter/)
 
 ## Project Description
 
@@ -8,7 +9,7 @@ Compararison of popular currency exchange rates.
 
 ## API and Data Sample
 
-[Fixer API](http://data.fixer.io/api/latest?access_key=b314fa295febc2e41e4933aff444d1c6)
+[API link](http://data.fixer.io/api/latest?access_key=b314fa295febc2e41e4933aff444d1c6)
 ```JSON
 {
     "success": true,
@@ -82,7 +83,7 @@ Compararison of popular currency exchange rates.
 #### MVP 
 
 - Conversion of the currency value pair from X currency to Y currency
-- Allow input amount to conver
+- Allow input amount to convert
 - Enable base conversion
 
 #### PostMVP  
@@ -123,7 +124,7 @@ Compararison of popular currency exchange rates.
 | Functionality of Conversion display result | H | 3hrs| 4hrs | 4hrs |
 | UX image display | L | 3hrs| 2hrs | 2hrs |
 | Advanced CSS | L | 3hrs| 2hrs | 2hrs |
-| Total | H | 36hrs| 36hrs | 36hrs |
+| Total | H | 36hrs| 33hrs | 33hrs |
 
 ## Code Snippet
 ```
@@ -132,4 +133,4 @@ const displayConvertedCurrency = `${key} ${multiplier * value}`
 ```
 
 ## Change Log
-I had to change the API because the conversion base/currency rates I did not had permission with the USD base. (I had to change the base currency). Also, I had to change part of the layout I designed. I wanted to add more interaction/experience showing a table/list of currency instead of just a list of selection.
+I had to change the API because in the conversion base/currency rates I did not had permission with the USD base. (I had to change the base currency). Also, I had to change part of the layout I designed. I wanted to add more interaction/experience showing a table/list of currency instead of just a list of selection of the currency converted.
